@@ -4,6 +4,8 @@ const app = express();
 
 const PORT = 8000;
 
+app.use(express.json());
+
 app.use('/api/' , apiroutes);
 
 app.listen( PORT , ()=>
